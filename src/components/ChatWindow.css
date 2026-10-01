@@ -1,0 +1,174 @@
+.chat-layout {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.sidebar {
+  width: 320px;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f9fb;
+}
+
+.sidebar-header {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.logout-btn:hover {
+  opacity: 1;
+}
+
+.chat-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.chat-item {
+  display: flex;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.chat-item:hover {
+  background-color: #eef2f5;
+}
+
+.chat-item.active {
+  background-color: #e3f2fd;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 12px;
+  text-transform: uppercase;
+}
+
+.chat-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chat-info .phone {
+  font-weight: 500;
+  color: #333;
+  font-size: 15px;
+}
+
+.chat-info .last-msg {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.sidebar-footer {
+  padding: 15px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+
+.new-chat-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.new-chat-btn:hover {
+  background-color: #0056b3;
+}
+
+.add-chat-form {
+  display: flex;
+  gap: 5px;
+}
+
+.add-chat-form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-chat-form button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.add-chat-form button[type="button"] {
+  background-color: #dc3545;
+}
+
+/* Область чата */
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5ddd5; /* Фон как в мессенджерах */
+}
+
+.chat-header {
+  padding: 15px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.chat-header h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.empty-state {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  font-size: 16px;
+  background-color: #f0f2f5;
+}

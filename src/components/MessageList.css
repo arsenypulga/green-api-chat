@@ -1,0 +1,49 @@
+.message-list {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.no-messages {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.message-bubble {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 12px;
+  position: relative;
+  word-wrap: break-word;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.message-bubble.outgoing {
+  align-self: flex-end;
+  background-color: #dcf8c6; /* Светло-зеленый как в WhatsApp/Telegram */
+  border-bottom-right-radius: 4px;
+}
+
+.message-bubble.incoming {
+  align-self: flex-start;
+  background-color: #ffffff;
+  border-bottom-left-radius: 4px;
+}
+
+.message-text {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.message-time {
+  font-size: 11px;
+  color: #888;
+  text-align: right;
+  margin-top: 5px;
+}
