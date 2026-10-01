@@ -12,5 +12,13 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone <ссылка_на_ваш_репозиторий>
+   git clone https://github.com/arsenypulga/green-api-chat.git
    cd green-api-chat
+
+2. Установите зависимости: 
+   npm install
+
+3. Запустите проект в режиме разработки:
+   npm run dev
+
+4. Откройте браузер по адресу http://localhost:5173
